@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="SampleJavaProject" default="jar".
+<project name="SampleJavaProject" default="jar"
          xmlns:ivy="antlib:org.apache.ivy.ant">
 
   <!-- Project-specific configuration -->
@@ -15,7 +15,7 @@
 
   <!-- Targets -->
 
-  <target name="resolve" description="Retrieve dependencies with Ivy.">
+  <targets name="resolve" description="Retrieve dependencies with Ivy.">
     <ivy:resolve log="download-only"/>
     <ivy:cachepath conf="build" pathid="build.classpath"/>
     <ivy:cachepath conf="default" pathid="runtime.classpath"/>
